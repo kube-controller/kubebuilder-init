@@ -1,0 +1,7 @@
+domain: zchee.io
+repo: github.com/zchee/kubebuilder-init/namespaced
+resources:
+- group: ship
+  kind: Frigate
+  version: v1alpha1
+version: "2"
