@@ -2,8 +2,8 @@
 
 ```console
 $ kubebuilder version
-Version: version.Version{KubeBuilderVersion:"2.2.0", KubernetesVendor:"1.15.5", GitCommit:"0824a139f59e109c9e418a0b6e71a53c6e9e144f", BuildDate:"2019-11-20T00:00:24Z", GoOs:"unknown", GoArch:"unknown"}
+Version: main.version{KubeBuilderVersion:"v3.0.0-alpha.0-312-g5ca8884a", KubernetesVendor:"unknown", GitCommit:"5ca8884a1929e2995e10339fc87122b1ccabefa1", BuildDate:"2021-08-30T14:34:45Z", GoOs:"darwin", GoArch:"amd64"}
 
-$ kubebuilder init --domain zchee.io --license apache2 --skip-go-version-check
-$ kubebuilder create api --group ship --version v1alpha1 --kind Frigate --namespaced
+$ kubebuilder --plugins go/v3 init --component-config --fetch-deps --license apache2 --owner 'The kubebuilder-init Authors' --project-version 3 --repo 'github.com/zchee/kubebuilder-init/namespaced' --skip-go-version-check
+$ kubebuilder --plugins go/v3 create api --controller --crd-version v1 --group ship --make false --kind Frigate --namespaced --resource --version v1alpha1
 ```

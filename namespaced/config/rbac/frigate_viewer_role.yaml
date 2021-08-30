@@ -1,4 +1,4 @@
-# permissions to do viewer frigates.
+# permissions for end users to view frigates.
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
