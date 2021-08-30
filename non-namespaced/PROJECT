@@ -1,7 +1,16 @@
+componentConfig: true
 domain: zchee.io
+layout:
+- go.kubebuilder.io/v3
+projectName: non-namespaced
 repo: github.com/zchee/kubebuilder-init/non-namespaced
 resources:
-- group: ship
+- api:
+    crdVersion: v1
+  controller: true
+  domain: zchee.io
+  group: ship
   kind: Frigate
+  path: github.com/zchee/kubebuilder-init/non-namespaced/api/v1alpha1
   version: v1alpha1
-version: "2"
+version: "3"
