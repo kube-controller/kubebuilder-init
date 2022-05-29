@@ -2,7 +2,7 @@ module github.com/zchee/kubebuilderinit
 
 go 1.18
 
-require sigs.k8s.io/kubebuilder/v3 v3.4.1
+require sigs.k8s.io/kubebuilder/v3 v3.0.0-alpha.0.0.20220528140651-800fdeec6e5c
 
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
