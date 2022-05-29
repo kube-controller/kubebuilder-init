@@ -1,7 +1,8 @@
 componentConfig: true
 domain: zchee.io
 layout:
-- go.kubebuilder.io/v3
+- base.go.kubebuilder.io/v3
+- kustomize.common.kubebuilder.io/v2-alpha
 projectName: non-namespaced
 repo: github.com/zchee/kubebuilder-init/non-namespaced
 resources:
